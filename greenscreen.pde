@@ -4,8 +4,7 @@ void setup() {
     background(0);
 
     new GreenScreen("img3.jpg", "img5.jpg")         // Neues Bild laden
-        //.setMinHue((byte) 60).setMaxHue((byte) 130) // Farbbereich definieren
-        //.replaceGreenscreen()                       // Greenscreen mit 2tem Bild ersetzen
+        .replaceGreenscreen()                       // Greenscreen mit 2tem Bild ersetzen
         .display(width, height)                     // anzeigen
         .saveAs("res.png")                          // Abspeichern
     ;
